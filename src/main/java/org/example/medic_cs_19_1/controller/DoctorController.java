@@ -1,4 +1,4 @@
-package org.example.medic_cs_19_1;
+package org.example.medic_cs_19_1.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
