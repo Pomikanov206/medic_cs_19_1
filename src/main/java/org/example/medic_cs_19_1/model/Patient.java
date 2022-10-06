@@ -3,12 +3,29 @@ package org.example.medic_cs_19_1.model;
 import java.util.List;
 
 public class Patient {
+    private int id;
     private String name;
     private String phone;
     private String address;
     private List<Disease> diseases;
 
     public Patient() {
+    }
+
+    public Patient(int id, String name, String phone, String address, List<Disease> diseases) {
+        this.id = id;
+        this.name = name;
+        this.phone = phone;
+        this.address = address;
+        this.diseases = diseases;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {

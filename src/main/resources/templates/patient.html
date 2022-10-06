@@ -5,6 +5,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<p th:text="'Перший пацієнт, ' + ${name} + '!'" />
+    <p th:text="'ID: ' + ${patient.id}" />
+    <p th:text="'ПІБ: ' + ${patient.name}" />
+    <p th:text="'Номер телефону: ' + ${patient.phone}" />
+    <p th:text="'Адреса: ' + ${patient.address}" />
+    <p/>
+    <a href="/patients">До списку</a>
 </body>
 </html>
