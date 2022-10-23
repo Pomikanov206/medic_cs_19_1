@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Додати хворобу до пацієнта</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Form</h1>
+<form action="#" th:action="@{/p/{id}/add-disease(id=${patientId})}" th:object="${disease}" method="post">
+    <p>Назва хвороби: <input type="text" th:field="*{title}" /></p>
+    <p>Опис хвороби: <input type="text" th:field="*{description}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

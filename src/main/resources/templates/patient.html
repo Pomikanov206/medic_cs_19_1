@@ -9,6 +9,11 @@
     <p th:text="'ПІБ: ' + ${patient.name}" />
     <p th:text="'Номер телефону: ' + ${patient.phone}" />
     <p th:text="'Адреса: ' + ${patient.address}" />
+    <div th:each="disease: ${patient.diseases}">
+        <p th:text="'Назва хвороби: ' + ${disease.title}"></p>
+        <p th:text="'Опис хвороби: ' + ${disease.description}"></p>
+    </div>
+    <a th:href="@{/p/{id}/add-disease(id=${patient.id})}">Додати хворобу</a>
     <p/>
     <a href="/patients">До списку</a>
 </body>
